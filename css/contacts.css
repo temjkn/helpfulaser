@@ -1,0 +1,17 @@
+.contacts tr{
+    font-size: .9em;
+    height: 28px;
+}
+
+.contacts i{
+    color: #7ba0c1;
+}
+
+.contact_black{
+    color: black;
+}
+
+.map{
+    margin-top: 65px;
+    width: 100%;
+}

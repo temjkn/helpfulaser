@@ -1,0 +1,15 @@
+.comment{
+    border: 1px solid #eef5f9; 
+    border-radius: 5px;
+    padding-left: 25px;
+    color: black;
+    margin-bottom: 32px;
+}
+
+.comment p{
+    line-height: 7px;
+}
+
+.name_comment{
+    color:#718cab;
+}
