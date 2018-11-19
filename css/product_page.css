@@ -1,0 +1,108 @@
+.review_flex{
+    display: flex;
+}
+
+.box{
+    width: 440px;
+}
+
+.short_review button{
+    position: absolute;
+    bottom: -58px;
+}
+
+.short_review{
+    height: 295px;
+    position: relative;
+    margin-left: 85px;
+    padding-right: 50px;
+}
+
+.slider{
+	position: relative;
+	padding-top: 320px; /*That helps bring the labels down*/
+	margin-top: 80px;
+}
+
+
+/*Last thing remaining is to add transitions*/
+.slider>img{
+	position: absolute;
+	left: 80px; 
+    top: 0;
+	transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+	width: 80px;
+    height: 98px;
+	margin-top: 43px;
+    margin-right: 3px;
+	border: 1px solid #f5f5f5;
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	background-color: #f5f5f5;
+	opacity: 0.6;
+}
+
+.slider label img{
+	display: block;
+    width: 100%;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+    background-color: white;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+.subtitle{
+    color: #fb7b7b;
+    font-size: .73em;
+    margin-top: 30px;
+}
+
+.line_bottom p {
+  margin-bottom: 0px;
+}
+
+.short_review .title{
+    margin-top: 0;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.stars li{
+    display: inline-block;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.small_description{
+    font-size: .9em;
+    padding-right: 50px;
+}
+
+.price{
+    margin-top: 2px;
+    font-size: 2.5em;
+    font-weight: bold;
+}

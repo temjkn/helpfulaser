@@ -6,10 +6,40 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/media.css" />
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/change_style.css" />
+<link rel="stylesheet" type="text/css" href="css/product_page.css" />
 <!--<link rel="stylesheet/less" type="text/css" href="css/style.less" />
 <link rel="stylesheet/less" type="text/css" href="css/media.less" />-->
     <script src="less.min.js" ></script>
+    <!-- Pixel Glass -->
+<!--<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию мобильный макет */
+    background-image: url( "img/index-mobile.png" );
+  }
+  /* Планшет */
+  @media ( min-width: 760px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "img/index-tablet.png" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 960px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "Img-maket/Pmcash_item.png" );
+    }
+  }
+
+  BODY {
+    opacity: .5;
+  }
+</style>
+<link rel="stylesheet" href="node_modules/pixel-glass/styles.css">
+<script src="node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 	<title>Helpfulaser</title>
 </head>
 <body>
@@ -17,7 +47,7 @@
         <div class="menu_hidden" id="menu_see"><i class="fa fa-bars"></i></div>
         <div class="menu see_menu" id="menu_top">
             <ul>
-                <li class="menu_catalog"><a href="#content">Каталог лазеров</a></li>
+                <li class="menu_catalog" onclick="click_menu('catalog')"><a href="#content">Каталог лазеров</a></li>
                 <li><a href="pages/action.html">Акции</a></li>
                 <li class="menu_about_as"><a href="#content">О компании</a></li>
                 <li><a href="#content">Поддержка</a></li>
@@ -121,6 +151,7 @@
                         </ul>
                     </li>
                 </ul>
+                <div class="similar_goods"></div>
                 <div class="banner">
                 <a href="#">
                    <img src="image/banner.png"> 
@@ -128,8 +159,7 @@
             </div>
             </div>
             <div class="content" id="content">
-                
-            </div>
+                </div>
         </div>
     </div>
     <footer>

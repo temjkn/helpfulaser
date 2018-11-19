@@ -357,3 +357,36 @@ footer .footer_write #phone {
 .logo_footer .logo {
   color: #bebebe;
 }
+
+.card {
+  width: 255px;
+  height: 317px;
+  border: 1px solid #eef5f9;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0 30px;
+  font-size: 1.05em;
+}
+.card img {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.card a {
+  color: #333333;
+}
+.card card_text {
+  line-height: 1.4em;
+}
+.card_flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+.card_text_bold {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
