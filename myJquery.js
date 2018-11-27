@@ -79,7 +79,7 @@ $('.menu_lamps').click(function(){
         var name= 'Каталог';
     };
     console.log(25);
-    $('#content').load('./pages/products/'+url_adress);
+    $('#content').load('pages/products/'+url_adress);
     $('link:last').attr('href', 'css/'+css);
     $('.active').html(name);
     $.ajax({  
