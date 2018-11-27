@@ -1,4 +1,4 @@
-/*$('.menu_catalog').click(function(){
+$('.menu_catalog').click(function(){
     $.ajax({  
                     url: "pages/catalog.html",  
                     cache: false,  
@@ -49,7 +49,7 @@ $('.menu_contacts').click(function(){
      $('#content').load('pages/contacts.html');
     $('link:last').attr('href', 'css/contacts.css');
     $('.active').html('Контакты');
-});*/
+});
 
 $('.menu_lamps').click(function(){
     $.ajax({  
@@ -68,7 +68,7 @@ $('.menu_lamps').click(function(){
     $(".parcelling ul").append('<li class="active">Лампы и линзы</li>');
 });
 
-function click_menu(){
+/*function click_menu(){
     var url_adress= '12';
     var css= '12';
     var name= '12';
@@ -82,7 +82,7 @@ function click_menu(){
     $('#content').load('./pages/products/'+url_adress);
     $('link:last').attr('href', 'css/'+css);
     $('.active').html(name);
-   /* $.ajax({  
+    $.ajax({  
                     url: "pages/products/"+url_adress,  
                     cache: false,  
                     success: function(html){  
@@ -98,5 +98,5 @@ function click_menu(){
         $(".parcelling ul").append('<li><a href="#">'+sub_name+'</a></li>')
     }
     $(".parcelling ul").append('<li class="active">'+name+'</li>');
-    window.history.pushState( null, null,'catalog' );*/
-}
+    window.history.pushState( null, null,'catalog' );
+}*/
