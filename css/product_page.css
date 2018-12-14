@@ -18,6 +18,23 @@
     padding-right: 50px;
 }
 
+.line_bottom ul{
+    margin-top: 65px;
+}
+
+.line_bottom li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.line_bottom li a{
+    color: #82bcda;
+}
+
+.line_bottom .active{
+    color: black;
+}
+
 .slider{
 	position: relative;
 	padding-top: 320px; /*That helps bring the labels down*/
@@ -90,6 +107,10 @@ On click the images will be displayed at normal size to complete the effect
     margin-bottom: 20px;
 }
 
+.stars{
+    margin-top: 20px;
+}
+
 .stars li{
     display: inline-block;
     font-size: 1.2em;
@@ -101,8 +122,171 @@ On click the images will be displayed at normal size to complete the effect
     padding-right: 50px;
 }
 
+.description{
+    color: #777777;
+}
+
 .price{
     margin-top: 2px;
     font-size: 2.5em;
     font-weight: bold;
+}
+
+#shadow{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.request {
+    position: relative;
+    margin:5% auto;
+    width: 430px;
+    max-height: 500px;
+}
+
+#close_wind {
+    position: absolute;
+    right: 0;
+    font-size: 2em;
+    top: -40px;
+    color: white;
+}
+
+.form_request {
+    padding: 15px 30px;
+    background-color:white;
+    margin-top: 39px;
+    border-radius: 9px;
+}
+
+.form_request h3{
+    margin-left: 46px;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.form_request p{
+    font-size: .67em;
+    text-align: center;
+    margin: 0 14px;
+}
+
+.form_request form{
+    margin-top: 30px;
+}
+
+.form_request input{
+    width: 91%;
+    height: 43px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    font-size: 1em;
+    color: black;
+    border: 1px solid #cadbeb;
+}
+
+.form_request form button{
+    margin: 15px 85px;
+    width: 200px;
+    height: 30px;
+    background-color: #3ac2a5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1600px){
+    .short_review{
+        height: 325px;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .review_flex{
+        width: 100%;
+    }
+    .short_review{
+        margin-left: 0;
+    }
+    .box {
+        width: 50%;
+    }
+    
+    .slider label{
+        width: 70px;
+    }
+    
+    .slider > img{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .review_flex{
+        flex-wrap: wrap;
+    }
+    
+    .short_review {
+        -webkit-order: -1;
+        order: -1;
+        height: auto;
+    }
+    .box {
+        width: 100%;
+    }
+    .slider {
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 500px){
+   .slider {
+        margin-left: 50px;
+    } 
+    .request{
+        width: 70%;
+    }
+    .form_request h3{
+        margin-left:0;
+        text-align: center;
+    }
+    .form_request form button{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+   .slider {
+        margin-left: 0;
+    } 
+    .short_review{
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .short_review .title{
+        font-size: 1.5em;
+    }
+    
+    .slider{
+        padding-top: 220px;
+    }
+    
+    .slider > img{
+        width: 100%;
+    }
+    
+    .slider label {
+        width: 58px;
+    }
+    .request{
+        width: 90%;
+    }
 }

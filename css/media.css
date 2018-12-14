@@ -315,6 +315,9 @@
   nav .welcome {
     margin-left: 30%;
   }
+    .content{
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width: 650px) {
   nav li {

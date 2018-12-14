@@ -1,0 +1,134 @@
+.content{
+    width: 88%;
+}
+
+.content p{
+    line-height: 25px;
+    margin-bottom: 27px;
+}
+
+#content p:nth-child(4){
+    margin-bottom: 15px;
+}
+
+#content .p_margin{
+    margin-bottom: 15px;
+}
+
+.info_down{
+    margin-bottom: 15px;
+}
+
+.content li:nth-child(3){
+    margin-bottom: 54px;
+}
+
+.info_down #checkbox-1,
+.info_down #checkbox-2,
+.info_down #checkbox-3{
+  display: none;
+}
+
+.info_down #checkbox-1:checked + label,
+.info_down #checkbox-2:checked + label,
+.info_down #checkbox-3:checked + label{
+  background-color: #deecf4;
+}
+
+.info_down #checkbox-1:checked + label i:before,
+.info_down #checkbox-2:checked + label i:before,
+.info_down #checkbox-3:checked + label i:before{
+  transform: translate(5px, 8px) rotate(45deg);
+}
+
+.info_down #checkbox-1:checked + label i:after,
+.info_down #checkbox-2:checked + label i:after,
+.info_down #checkbox-3:checked + label i:after{
+  transform: translate(-5px, 8px) rotate(-45deg);
+}
+
+.info_down .checkbox {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 23px 18px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    background-color: #deecf4;
+}
+
+.info_down .checkbox i {
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  right: 20px;
+}
+
+.info_down .checkbox i:before, .info_down .checkbox i:after {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 3px;
+  background-color: black;
+  transition: transform 250ms ease;
+}
+
+.info_down .checkbox i:before {
+  transform: translate(-5px, 8px) rotate(45deg);
+}
+
+.info_down .checkbox i:after {
+  transform: translate(5px, 8px) rotate(-45deg);
+}
+
+.info_down .content {
+    position: relative;
+    width: 100%;
+    max-height: 1px;
+    padding: 0;
+    margin-left: 0;
+    overflow-y: scroll;
+    font-size: 14px;
+    line-height: 1.5;
+    transition: max-height 500ms ease-in-out;
+}
+
+.info_down .content h3 {
+  margin: 30px 0 15px 30px;
+}
+
+.trigger .content p {
+  margin: 0 30px 30px;
+}
+
+#checkbox-1:checked ~ .content,
+#checkbox-2:checked ~ .content,
+#checkbox-3:checked ~ .content {
+  max-height: 350px;
+  transition: max-height 500ms ease-in-out;
+}
+
+.content form{
+    width: 37.2%;
+}
+
+.content form button{
+    width: 140px;
+    height: 35px;
+    background-color: #7ba0c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.content form input{
+    width: 90%;
+    height: 43px;
+    margin-bottom: 22px;
+    padding-left: 30px;
+    font-size: 1em;
+    color: black;
+    border: 1px solid #cadbeb;
+}

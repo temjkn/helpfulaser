@@ -1,4 +1,21 @@
- <div class="contacts">
+<?php 
+    $addCSS="css/contacts.css";
+    $addParcellingActive="Контакты";
+    require "tpl/header.php" 
+;?>
+
+<div class="parcelling">
+            <ul>
+                <li><a href="index.php">Главная</a></li>
+                <li class="active"><a href="#"><?php echo $addParcellingActive ?></a></li>
+            </ul>
+        </div>
+<div class="frame">
+    <div class="margin" id="content_touch">
+        <?php require "tpl/menu.php" ?>
+        
+        <div class="content" id="content">
+            <div class="contacts">
                     <h2>КОНТАКТЫ</h2>
                     <table>
                     <tr>
@@ -22,3 +39,7 @@
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4fea421d5fc755e9df442aa7964429b9bc202032c691b5338ac30caf02a2a30e&amp;width=700&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                 </div>
+        </div>
+    </div>
+</div>
+<?php require "tpl/footer.php" ?>

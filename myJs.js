@@ -14,7 +14,7 @@ var finalPoint;
     //event.preventDefault();
     event.stopPropagation();
     initialPoint=event.changedTouches[0];
-    }, false);
+    }, false);/*показывает и скрывает боковое меню*/
         content_touch.addEventListener('touchend', function(event) {
         //event.preventDefault();
         event.stopPropagation();
@@ -39,4 +39,12 @@ var finalPoint;
             }else{
                 accordion.classList.add("slide_830");
             }
+};
+
+request.onclick=function(){
+        $('#shadow').css('display','block');
+};
+
+close_wind.onclick=function(){
+    $('#shadow').css('display','none');
 };

@@ -1,0 +1,13 @@
+.content li {
+    list-style-type:inherit ;
+    line-height: 25px;
+}
+
+.content ul{
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.line_bottom{
+    padding-bottom: 5px;
+}
